@@ -120,7 +120,7 @@ a.site-logo {
   transform: translateY(0px) rotate(45deg);
 }
 .nav-toggler.toggler-open span:after {
-  transform: translateY(-3px) rotate(-45deg);
+  transform: translateY(-2px) rotate(-45deg);
 }
 /* nav-toggler css start */
 
