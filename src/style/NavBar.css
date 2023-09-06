@@ -1,0 +1,226 @@
+.navbar-area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    border-bottom: 1px solid #000;
+    z-index: 999;
+  }
+
+
+  .container {
+    padding: 0 !important;
+    margin: 0 !important;
+    min-width: 100% !important;
+  }
+
+  .site-navbar {
+    display: flex;
+    max-width: 100% !important;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .site-navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+  .site-navbar ul li a {
+    color: #fff;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .site-navbar ul li a:hover {
+    background: rgba(255,255,255,.1);
+  }
+
+
+  
+/* nav-toggler css start */
+.nav-toggler {
+    border: none;
+    padding: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    height: 39px;
+    display: none;
+  }
+  .nav-toggler span, 
+  .nav-toggler span:before, 
+  .nav-toggler span:after {
+    width: 28px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    transition: .3s;
+  }
+  .nav-toggler span:before {
+    content: '';
+    transform: translateY(-9px);
+  }
+  .nav-toggler span:after {
+    content: '';
+    transform: translateY(6px);
+  }
+  .nav-toggler.toggler-open span {
+    background-color: transparent;
+  }
+  .nav-toggler.toggler-open span:before {
+    transform: translateY(0px) rotate(45deg);
+  }
+  .nav-toggler.toggler-open span:after {
+    transform: translateY(-2px) rotate(-45deg);
+  }
+  /* nav-toggler css start */
+  
+  /* Navar configuration 👆 */
+
+  
+  a.site-logo {
+    font-size: 26px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    
+  }
+  a.site-logo {
+    display: inline-block !important;
+  }
+  a.site-logo, a.site-logo img {
+    margin: 0;
+    padding: 0;
+  }
+  a.site-logo img {
+    vertical-align: top;
+  }
+  a.site-logo {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+a.site-logo {
+    display: block !important;
+}
+
+a.site-logo img {
+    /* width: 100% !important; */
+    height: auto !important;
+    display: block !important;
+}
+
+
+  li {
+    list-style: none;
+  }
+  
+  a:hover,
+  a:focus,
+  a:active,
+  a.active {
+    color: #033a80 !important;
+    transition: .6s;
+  }
+
+
+
+  @media screen and (max-width: 830px) {
+    .container {
+      max-width: 720px;
+    }
+    /* navbar css for mobile start */
+    .nav-toggler{
+      display: block;
+    }
+    .site-navbar {
+      min-height: 60px;
+    }
+    .site-navbar ul {
+      position: absolute;
+      width: 100%;
+      height: calc(100vh - 60px);
+      left: 0;
+      top: 60px;
+      flex-direction: column;
+      align-items: center;
+      /* border-top: 1px solid #444; */
+      background-color: rgba(0,0,0,.75);
+      max-height: 0;
+      overflow: hidden;
+      transition: .3s;
+    }
+    .site-navbar ul li {
+      width: 100%;
+      text-align: center;
+    }
+    .site-navbar ul li a {
+      padding: 25px;
+    }
+    .site-navbar ul li a:hover {
+      background-color: rgba(0, 0, 0, 0.295);
+    }
+    .site-navbar ul.open {
+      max-height: 100vh;
+      overflow: visible;
+    }
+    .intro-area h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }  
+    /* navbar css for mobile end */
+  }
+
+
+
+
+
+  @media (min-width: 1200px) {
+    .navbar-custom {
+        background-color: transparent !important;
+        border-bottom: none;
+    }
+    a{
+      color: #dac50b !important;
+      font-weight: bolder;
+    }
+    .site-logo img {
+        width: 14rem !important;
+    }
+    
+  }
+
+  @media (min-width: 300px) {
+    
+    a{
+      color: #dac50b !important;
+      font-weight: bolder;
+    }
+    .site-logo img {
+        width: 7rem !important;
+    }
+    
+  }
+
+  @media (min-width: 767px) {
+    
+    a{
+      color: #dac50b !important;
+      font-weight: bolder;
+    }
+    .site-logo img {
+        width: 15rem !important;
+    }
+    
+  }
+  
+  .navbar-scrolled {
+    background-color: black !important;
+    transition: background-color 0.5s ease; /* Esto añade una transición suave al cambiar el color de fondo */
+  }
+
+  
+  

@@ -3,11 +3,13 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
  body {
-  overflow-x: hidden;
-  font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
-}
+   overflow-x: hidden;
+   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+ }
+ 
 
 .text-muted {
   color: #777;
@@ -42,89 +44,20 @@ a {
 }
 
 
-.navbar-area {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: rgb(0, 0, 0);
-  border-bottom: 1px solid #000;
-  z-index: 999;
-}
+
 
 .main-content {
   margin-top: 80px; /* la altura del navbar + un margen adicional */
 }
 
-.site-navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-a.site-logo {
-  font-size: 26px;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: #fff;
-  text-decoration: none;
-}
-.site-navbar ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-}
-.site-navbar ul li a {
-  color: #fff;
-  padding: 20px;
-  display: block;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-.site-navbar ul li a:hover {
-  background: rgba(255,255,255,.1);
-}
+
+
+
+
+
+
 /* navbar regular css end */
 
-
-/* nav-toggler css start */
-.nav-toggler {
-  border: none;
-  padding: 5px;
-  background-color: transparent;
-  cursor: pointer;
-  height: 39px;
-  display: none;
-}
-.nav-toggler span, 
-.nav-toggler span:before, 
-.nav-toggler span:after {
-  width: 28px;
-  height: 3px;
-  background-color: #fff;
-  display: block;
-  transition: .3s;
-}
-.nav-toggler span:before {
-  content: '';
-  transform: translateY(-9px);
-}
-.nav-toggler span:after {
-  content: '';
-  transform: translateY(6px);
-}
-.nav-toggler.toggler-open span {
-  background-color: transparent;
-}
-.nav-toggler.toggler-open span:before {
-  transform: translateY(0px) rotate(45deg);
-}
-.nav-toggler.toggler-open span:after {
-  transform: translateY(-2px) rotate(-45deg);
-}
-/* nav-toggler css start */
-
-/* Navar configuration 👆 */
 
 
 li {
@@ -139,7 +72,7 @@ a.active {
   transition: .6s;
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -148,7 +81,7 @@ h6 {
   text-transform: uppercase;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 700;
-}
+} */
 
 .img-centered {
   margin: 0 auto;
@@ -372,51 +305,14 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 
-header {
-  text-align: center;
-  color: #fff;
-  background-attachment: scroll;
-  background-image: url("../images/headerBackgroudn.jpg");
-  background-position: center center;
-  background-repeat: none;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
 
-header .intro-text {
-  padding-top: 100px;
-  padding-bottom: 50px;
-}
 
-header .intro-text .intro-lead-in {
-  margin-bottom: 10px;
-  font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 22px;
-  font-style: italic;
-  line-height: 22px;
-  text-shadow:
-    -.5px -.5px 0 #000,
-    .3px -1px 0 #000,
-    -.5px .5px 0 #000,
-    .5px .5px 0 #000;
-}
 
-header .intro-text .intro-heading {
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 50px;
-  font-weight: 700;
-  line-height: 50px;
-  text-shadow:
-    -.5px -.5px 0 #000,
-    .3px -1px 0 #000,
-    -.5px .5px 0 #000,
-    .5px .5px 0 #000;
-  
-}
+
+
+
+
+
 
 .card-edit {
   width: 12rem !important;
@@ -681,29 +577,7 @@ header .intro-text .intro-heading {
 }
 
 
-@media(min-width:768px) {
-  header .intro-text {
-      padding-top: 200px;
-      padding-bottom: 150px;
-  }
 
-  header .intro-text .intro-lead-in {
-      margin-bottom: 25px;
-      font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-      font-size: 40px;
-      font-style: italic;
-      line-height: 40px;
-  }
-
-  header .intro-text .intro-heading {
-      margin-bottom: 25px;
-      text-transform: uppercase;
-      font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-      font-size: 75px;
-      font-weight: 700;
-      line-height: 75px;
-  }
-}
 
 section {
   padding: 100px 0;
@@ -1258,16 +1132,6 @@ ul.social-buttons li a:active {
   text-shadow: none;
   background: #033a80 ;
 }
-.background {
-  background: #033a80  !important;
-  color: #f3eeee;
-
-}
-.background:hover {
-  background: #26316b  !important;
-  color: #f3eeee !important;
-
-}
 
 img::selection {
   background: 0 0;
@@ -1307,51 +1171,7 @@ body {
 }
 
 
-@media screen and (max-width: 767px) {
-  .container {
-    max-width: 720px;
-  }
-  /* navbar css for mobile start */
-  .nav-toggler{
-    display: block;
-  }
-  .site-navbar {
-    min-height: 60px;
-  }
-  .site-navbar ul {
-    position: absolute;
-    width: 100%;
-    height: calc(100vh - 60px);
-    left: 0;
-    top: 60px;
-    flex-direction: column;
-    align-items: center;
-    border-top: 1px solid #444;
-    background-color: rgba(0,0,0,.75);
-    max-height: 0;
-    overflow: hidden;
-    transition: .3s;
-  }
-  .site-navbar ul li {
-    width: 100%;
-    text-align: center;
-  }
-  .site-navbar ul li a {
-    padding: 25px;
-  }
-  .site-navbar ul li a:hover {
-    background-color: rgba(0, 0, 0, 0.295);
-  }
-  .site-navbar ul.open {
-    max-height: 100vh;
-    overflow: visible;
-  }
-  .intro-area h2 {
-    font-size: 36px;
-    margin-bottom: 15px;
-  }  
-  /* navbar css for mobile end */
-}
+
 
 .style-p {
   font-size: .8rem;

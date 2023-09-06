@@ -3,8 +3,8 @@ import $ from 'jquery';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'jquery/dist/jquery.min.js';
 import 'bootstrap/dist/js/bootstrap.min.js' ;
-import '../style/App.css';
-
+import '../style/NavBar.css';
+import Logo from '../images/logo.png'
 
 
 function Navbar() {
@@ -18,12 +18,33 @@ function Navbar() {
     setMenuOpen(false);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+        if (window.scrollY > 30) { // Cambia "50" al número de píxeles que prefieras para el cambio
+            document.querySelector('.navbar-area').classList.add('navbar-scrolled');
+        } else {
+            document.querySelector('.navbar-area').classList.remove('navbar-scrolled');
+        }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Limpiar el event listener cuando el componente se desmonte
+    return () => {
+        window.removeEventListener('scroll', handleScroll);
+    };
+}, []);
+
+
   return (
-    <div className="navbar-area">
+    <div className="navbar-area navbar-custom">
       <div className="container">
-        <nav className="site-navbar">
+        <nav className="site-navbar ">
           {/* site logo */}
-          <a href="#inicio" className="site-logo">Pedro</a>
+          <a href="#inicio" className="site-logo">
+            <img src={Logo} alt="Logo" className="" />
+          </a>
+
 
           {/* site menu/nav */}
           <ul className={menuOpen ? 'open' : ''} onClick={closeMenu}>
