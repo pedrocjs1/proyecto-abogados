@@ -26,7 +26,6 @@ function App() {
         <Header />
       </header>
       <About />
-      <Services />
       <Tecnologies />
       <Portfolio />
       <Contact />

@@ -1,54 +1,99 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'jquery/dist/jquery.min.js';
-import 'bootstrap/dist/js/bootstrap.min.js';
-import '../style/App.css';
-import {AiFillLinkedin} from "react-icons/ai";
-import {AiFillGithub} from "react-icons/ai";
-import { HiMail } from "react-icons/hi";
-
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "jquery/dist/jquery.min.js";
+import "bootstrap/dist/js/bootstrap.min.js";
+import "../style/About.css";
 
 
 export default function About() {
   return (
     <section id="about">
-        <div className="container">
-            <div className="row">
-                <div className="col-lg-12 text-center">
-                    <h2 className="section-heading">Sobre Mi</h2>
-                    <h3 className="section-subheading text-muted">Introduction</h3>
-                </div>
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-12 text-center d-flex flex-column w-100 justify-content-center justify-content-center align-items-center">
+            <h2 className="section-heading">
+              YOUR PERSONAL INJURY & WORKERS COMP LAWYERS
+            </h2>
+            <div className="container-subheading">
+              <h3 className="section-subheading ">
+                IF YOU NEED HELP – YOU NEED BIGHORN LAW. OUR ATTORNEYS HAVE
+                RECOVERED OVER $250 MILLION FOR OUR CLIENTS. WE’VE FOUGHT FOR
+                CLIENTS WHO WERE INJURED IN A WIDE RANGE OF SITUATIONS –
+                PERSONAL INJURY, WORKERS’ COMPENSATION, MEDICAL MALPRACTICE, AND
+                MUCH MORE. BIGHORN LAW HAS YOUR BACK IN ANY SCENARIO.
+              </h3>
             </div>
-            <div className='d-flex w-100 gap-3 justify-content-around'>
-
-                <div className="d-flex justify-content-center image-me flex-wrap gap-3   col w-50">
-                            
-                </div>
-                <div className="d-flex  justify-content-center flex-wrap gap-3 container-about  text-start w-50">
-                    <p className=''>
-                    ¡Hola! Soy un Desarrollador 𝗙𝘂𝗹𝗹 𝘀𝘁𝗮𝗰𝗸 Java al que le encanta crear aplicaciones web estéticas y funcionales. Soy un profesional altamente motivado al que le fascina trabajar en entornos desafiantes que me permitan crecer y mejorar mis habilidades. Tengo experiencia en un entorno de trabajo real simulado. Me apasiona la resolución de problemas, el diseño, el trabajo en equipo y el aprendizaje constante. Con todos mis conocimientos estoy seguro que puedo aportar grandes ideas y soluciones. Tendrás lo mejor de mí trabajando en proyectos exigentes, implementando AGILE.
-                    </p>
-                    <div className='w-100'>
-                        <AiFillLinkedin  />
-                        <a className='ps-1' href="https://www.linkedin.com/in/pedro-vega-72a7a8239/">Pedro Vega</a>
-                    </div>
-                    <div className='w-100'>
-                        <AiFillGithub  />
-                        <a className='ps-1' href="https://github.com/pedrocjs1">Mi GitHub</a>
-                    </div>
-                    <div className='w-100'>
-                        <HiMail  />
-                        <a className='ps-1' href="mailto:pedrovega4680@gmail.com">pedrovega4680@gmail.com</a>
-                    </div>
-                    <div>
-                        
-                    </div>    
-                
-                </div>
-            </div>
-        
+          </div>
         </div>
+        <div className="d-flex w-100 gap-3 justify-content-around">
+          <div className="d-flex  justify-content-center flex-wrap gap-3 container-about text-start ">
+            <div className="w-100 gal ">
+              <h2 className="text-about">
+                Bighorn Law is one of Nevada’s premier injury law firms. Our
+                attorneys are among the nation’s best at fighting for the rights
+                of the seriously injured.
+              </h2>
+
+              <p>
+                Whether you have been injured in a motor vehicle collision, a
+                work-related incident, or as a result of medical malpractice,
+                our attorneys can help. We founded our firm with one goal in
+                mind – to take care of our community. As attorneys, our mission
+                is to fight for the everyday person and prevent insurance
+                companies and corporations from taking advantage of them when
+                they are at their most vulnerable.
+              </p>
+              <p>
+                The unfortunate truth is that personal injury and workers’
+                compensation claims can be complex and frustrating processes,
+                especially when you are dealing with a serious injury and the
+                financial fallout that it can create.
+              </p>
+              <p>
+                Without proper legal representation, injury victims rarely find
+                justice for what has happened to them. In fact, insurance
+                companies are set up to pay as little as possible – or nothing
+                at all – to claimants. This is where Bighorn Law comes in.
+              </p>
+              <p>
+                We’ve been through the process countless times and understand
+                how insurance companies approach claims.
+              </p>
+              <p>
+                Our attorneys work tirelessly to build strong cases for our
+                clients and recover the compensation that they need both in the
+                short term and in the future. Our approach gets results and the
+                insurance companies know it. In fact, we have recovered over
+                $250 million on behalf of our clients.
+              </p>
+            </div>
+            <div className="w-100 gal">
+              <h2 className="text-about">
+                We Can Allow You To Focus on What’s Important
+              </h2>
+              <p>
+                Part of our winning strategy is simply caring more about our
+                clients and treating them with the respect they deserve.
+                However, for us, it goes much further than that. If you choose
+                Bighorn Law to handle your case, you get access to a team of
+                talented attorneys and our significant resources. This includes
+                our comprehensive network of the best doctors, surgeons, and
+                conservative treatment specialists available.
+              </p>
+              <p>
+                We want our clients’ cases to be successful, but we also want to
+                help them get better. Our entire process is focused on allowing
+                clients to focus on recovery while we fight with the insurance
+                companies and other people who will take advantage of you.
+              </p>
+              <h2>
+                If you have been injured, call Bighorn Law today for a free and
+                confidential case evaluation.
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
-
