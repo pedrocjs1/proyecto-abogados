@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "jquery/dist/jquery.min.js";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "../style/Header.css";
-import Pdf from "../pdf/PedroVega-CV.pdf";
+
 
 function Header() {
   const [loaded, setLoaded] = useState(false);
@@ -11,7 +11,7 @@ function Header() {
   useEffect(() => {
     setTimeout(() => {
       setLoaded(true);
-    }, 500); // Espera medio segundo antes de iniciar la animación
+    }, 500); 
   }, []);
 
   return (
@@ -66,7 +66,7 @@ function Header() {
             
           </div>
           <a
-            href={Pdf}
+            
             className="page-scroll text-white btn btn-xl background"
             target="_blank"
             rel="noopener noreferrer"
