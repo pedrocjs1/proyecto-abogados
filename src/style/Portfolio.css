@@ -134,6 +134,15 @@ section h3.section-subheading {
         width: 30rem;
     }
 }
+@media screen and (max-width: 330px) {
+    .container-about h2{
+        font-size: 1.1rem;
+    }
+    .container-about p{
+        font-size: .8rem;
+    }
+}
+
 
 
 /* @media screen and (min-width: 1200px) {

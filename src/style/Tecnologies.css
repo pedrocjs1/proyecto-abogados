@@ -1,7 +1,51 @@
 
+
+.container-carousel h2 {
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+      line-height: 3rem;
+      font-family: "Titillium Web", sans-serif;
+      color: #000;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+      font-style: normal;
+    max-width: 100%;
+    display: block;
+}
+.container-carousel  {
+    max-width: 34rem;
+}
+
+.container-carousel h3 {
+    font-size: 16px;
+  line-height: 28px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  min-width: 100%;
+  display: block;
+}
+
+.carrr {
+    max-width: 50rem;
+}
+
+
+@media(max-width:406px) {
+    .container-carousel h2 {
+        font-size: 1.1rem;
+        letter-spacing: 0.2rem;
+        line-height: 2.3rem;
+    }
+    
+}
+
+
+/* 
 .slider {
     background: transparent;
-    /* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125); */
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
     height: 100px;
     margin: auto;
     overflow: hidden;
@@ -61,4 +105,4 @@
     .slider{
       width: 375px !important;
     }
-}
+} */

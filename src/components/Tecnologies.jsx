@@ -25,15 +25,15 @@ SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 export default function Carousel() {
     return (
-        <section id="tecnologies ">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12 text-center">
-                <h2 className="section-heading">Who We've Represented</h2>
-                <h3 className="section-subheading text-muted">Trusted by Leading Companies</h3>
+        <section id="tecnologies" className='d-flex w-100 justify-content-center align-items-center  '>
+          <div className="container-carousel flex-wrap">
+            <div className="row flex-wrap">
+              <div className="col-lg-12 d-flex align-items-center justify-content-center text-center flex-wrap">
+                <h2 className="carousel-heading flex-wrap">Who We've Represented</h2>
+                <h3 className="carousel-subheading text-muted mb-5">Trusted by Leading Companies</h3>
               </div>
             </div>
-            <div className="d-flex justify-content-center flex-wrap gap-3 srow text-center pb-5">
+            <div className="d-flex justify-content-center carousel-tec flex-wrap gap-3 srow text-center pb-5">
                 <Swiper
                     spaceBetween={0}
                     slidesPerView={1}
@@ -41,6 +41,7 @@ export default function Carousel() {
                     pagination={{ clickable: true }}
                     autoplay={{ delay: 3000 }}
                     loop={true}
+                    className='d-flex carrr'
                     >
                     <SwiperSlide><img src={nvidia} alt="Nvidia" style={{ height: '100px', width: 'auto', marginBottom: '20px'}} /></SwiperSlide>
                     <SwiperSlide><img src={gxGaming} alt="Gx Gaming" style={{ height: '100px', width: 'auto', marginBottoom: '20px' }} /></SwiperSlide>

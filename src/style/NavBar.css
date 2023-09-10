@@ -108,9 +108,10 @@ a.site-logo {
 }
 
 a.site-logo img {
-    /* width: 100% !important; */
-    height: auto !important;
-    display: block !important;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  width: 100%;
 }
 
 
