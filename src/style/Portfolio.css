@@ -1,0 +1,152 @@
+.img-grand img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    width: 100%;
+}
+
+.move-up {
+    margin-top: -5rem;
+}
+
+#about {
+    background: linear-gradient(0deg, #0a554e 0%, #021110 100%) 0% 0% no-repeat padding-box;
+}
+
+.container-about {
+    width: 100%;
+    max-width: 40rem;
+    
+    padding: 0rem 2rem 0rem 2rem;
+}
+.container-about h2{
+    font-size: 16px ;
+    line-height: 28px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    
+}
+
+.container-about p{
+    font-size: 14px ;
+    line-height: 28px;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    
+}
+
+.text-about {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    width: 100%;
+}
+
+
+section {
+    padding: 40px 40px;
+}
+  
+section h2.section-heading {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 40px;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+}
+  
+.section-heading {
+    padding: 0rem 6rem 0rem 6rem;
+}
+
+section h3.section-subheading {
+    margin-bottom: 75px;
+    text-transform: none;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.container-subheading {
+    max-width: 34rem;
+    width: 100%;
+}
+
+.container-subheading h3{
+    color: #11978b;
+    font-family: "Open Sans", sans-serif !important;
+    font-weight: bold !important;
+}
+
+.container-about h2, p {
+    width: 100%;
+}
+
+.container-about h2 {
+    max-width: 35rem;
+    font-size: 38px;
+    letter-spacing: 7px;
+    line-height: 41px;
+    font-family: "Titillium Web", sans-serif;
+    color: #fec52c;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: normal;
+}
+.container-about p {
+    font-size: 16px;
+    line-height: 28px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: #ffff;
+}
+
+
+
+
+.section-subheading {
+    box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total */
+    /* max-width: 80%;  */
+    /* margin: auto;  */
+    /* text-align: center;  */
+    padding: 1rem;
+}
+
+
+@media screen and (min-width: 1078px) {
+    .container-about  {
+        width: 100%;
+        display: flex;
+        
+    }
+    .gal {
+        min-width: 100% !important;
+    }
+}
+
+
+
+@media screen and (min-width: 812px) {
+    .img-grand img {
+        width: 30rem;
+    }
+}
+
+
+/* @media screen and (min-width: 1200px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        
+    }
+    .container-image{
+        width: 30rem;
+    }
+    .container-text{
+        max-width: 30rem;
+    }
+} */

@@ -25,7 +25,7 @@ SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 export default function Carousel() {
     return (
-        <section id="tecnologies">
+        <section id="tecnologies ">
           <div className="container">
             <div className="row">
               <div className="col-lg-12 text-center">
@@ -33,7 +33,7 @@ export default function Carousel() {
                 <h3 className="section-subheading text-muted">Trusted by Leading Companies</h3>
               </div>
             </div>
-            <div className="d-flex justify-content-center flex-wrap gap-3 srow text-center">
+            <div className="d-flex justify-content-center flex-wrap gap-3 srow text-center pb-5">
                 <Swiper
                     spaceBetween={0}
                     slidesPerView={1}

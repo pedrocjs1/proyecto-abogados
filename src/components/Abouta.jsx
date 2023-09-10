@@ -2,20 +2,20 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "jquery/dist/jquery.min.js";
 import "bootstrap/dist/js/bootstrap.min.js";
-import "../style/About.css";
+import "../style/Abouta.css"
 
 
-export default function About() {
+export default function Abouta() {
   return (
-    <section id="about">
-      <div className="container">
+    <section id="abouta">
+      <div className="containerab">
         <div className="row">
           <div className="col-lg-12 text-center d-flex flex-column w-100 justify-content-center justify-content-center align-items-center">
-            <h2 className="section-heading">
+            <h2 className="section-headinga">
               YOUR PERSONAL INJURY & WORKERS COMP LAWYERS
             </h2>
-            <div className="container-subheading">
-              <h3 className="section-subheading ">
+            <div className="container-subheadinga">
+              <h3 className="section-subheadinga ">
                 IF YOU NEED HELP – YOU NEED BIGHORN LAW. OUR ATTORNEYS HAVE
                 RECOVERED OVER $250 MILLION FOR OUR CLIENTS. WE’VE FOUGHT FOR
                 CLIENTS WHO WERE INJURED IN A WIDE RANGE OF SITUATIONS –
@@ -26,9 +26,9 @@ export default function About() {
           </div>
         </div>
         <div className="d-flex w-100 gap-3 justify-content-around">
-          <div className="d-flex  justify-content-center flex-wrap gap-3 container-about text-start ">
-            <div className="w-100 gal ">
-              <h2 className="text-about">
+          <div className="d-flex  justify-content-center flex-wrap gap-3 container-abouta text-start ">
+            <div className="w-100 gala ">
+              <h2 className="text-abouta">
                 Bighorn Law is one of Nevada’s premier injury law firms. Our
                 attorneys are among the nation’s best at fighting for the rights
                 of the seriously injured.
@@ -67,8 +67,8 @@ export default function About() {
                 $250 million on behalf of our clients.
               </p>
             </div>
-            <div className="w-100 gal">
-              <h2 className="text-about">
+            <div className="w-100 gala">
+              <h2 className="text-abouta">
                 We Can Allow You To Focus on What’s Important
               </h2>
               <p>
