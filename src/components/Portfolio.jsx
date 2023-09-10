@@ -5,7 +5,6 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import "../style/Portfolio.css";
 import grand from "../images/abuelos.jpg";
 
-
 export default function Portfolio() {
   return (
     <section id="about">
@@ -20,10 +19,8 @@ export default function Portfolio() {
         <div className="d-flex w-100 gap-3 justify-content-around">
           <div className="d-flex  justify-content-center flex-wrap gap-3 container-about text-start ">
             <div className="w-100 gal d-flex flex-column align-items-center flex-wrap">
-              <h2 className="text-about ">
-                Get to know BigHorn Law
-              </h2>
-
+              <h2 className="text-about ">Get to know BigHorn Law</h2>
+              <div className="line-p"></div>
               <p>
                 An attorney can make or break a case based on how the case is
                 documented, developed, and positioned for insurance companies
@@ -34,10 +31,12 @@ export default function Portfolio() {
                 implement a team approach so that all of our clients benefit
                 from our firm’s collective knowledge, experience, and successes.
               </p>
-              
-              
+              <p>
+                It’s no surprise Bighorn Law was named in the Top 100 personal
+                injury attorneys in the nation in 2020. If you need an attorney,
+                let us put our experience and resources to work for you.
+              </p>
             </div>
-            
           </div>
         </div>
       </div>
@@ -45,34 +44,14 @@ export default function Portfolio() {
   );
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // export default function Portfolio() {
 //   return (
 //     <section id="portfolio" >
-      
-        
+
 //           {/* <div className=" text-center img-grand move-up">
 //             <img src={grand} alt="" />
 //           </div> */}
-        
+
 //         <div className="container-text ">
 //           <h2 className="mt-3 h2-title text-center w-100">Get to know BigHorn Law</h2>
 //           <div className=" d-flex flex-wrap section-p">
@@ -91,13 +70,13 @@ export default function Portfolio() {
 //                 It’s no surprise Bighorn Law was named in the Top 100 personal
 //                 injury attorneys in the nation in 2020. If you need an attorney,
 //                 let us put our experience and resources to work for you.
-                
+
 //               </p>
-              
+
 //             </div>
 //           </div>
 //         </div>
-      
+
 //     </section>
 //   );
 // }
