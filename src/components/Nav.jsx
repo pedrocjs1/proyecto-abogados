@@ -22,8 +22,10 @@ function Navbar() {
     const handleScroll = () => {
         if (window.scrollY > 30) { 
             document.querySelector('.navbar-area').classList.add('navbar-scrolled');
+            
         } else {
             document.querySelector('.navbar-area').classList.remove('navbar-scrolled');
+            
         }
     };
     window.addEventListener('scroll', handleScroll);
@@ -41,18 +43,29 @@ function Navbar() {
             <img src={Logo} alt="Logo" className="" />
           </a>
 
-          <ul className={menuOpen ? 'open' : ''} onClick={closeMenu}>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#about">Sobre Mi</a></li>
-            <li><a href="#services">Servicios</a></li>
-            <li><a href="#portfolio">Portafolio</a></li>
-            <li><a href="#contact">Contacto</a></li>
-          </ul>
+          <div className='w-100 nav-container-ul-number'>
+            <div className='w-100 d-flex flex-column align-items-end me-5 container-nav-container-ul-number'>
+              <span className='pe-3  free-span'>24/7 FREE CONSULTATION</span>
+              <a href="" className='pe-3 number-span'>702-333-1111</a>
+            </div>
+            <div className='w-100 d-flex align-items-center justify-content-end containter-ul-nav'>
 
-          {/* nav-toggler for mobile version only */}
-          <button className={`nav-toggler ${menuOpen ? 'toggler-open' : ''}`} onClick={toggleMenu}>
+              <ul className={menuOpen ? 'open' : ''} onClick={closeMenu}>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#about">Sobre Mi</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#portfolio">Portafolio</a></li>
+                <li><a href="#contact">Contacto</a></li>
+              </ul>
+              <button className={`nav-toggler ${menuOpen ? 'toggler-open' : ''}`} onClick={toggleMenu}>
             <span></span>
           </button>
+            </div>
+          </div>
+          
+
+          {/* nav-toggler for mobile version only */}
+          
         </nav>
       </div>
     </div>
