@@ -34,9 +34,7 @@
   text-decoration: none;
   text-transform: uppercase;
 }
-.site-navbar ul li a:hover {
-  background: rgba(255, 255, 255, 0.1);
-}
+
 
 /* nav-toggler css start */
 .nav-toggler {
@@ -148,8 +146,10 @@ a:focus,
 a:active,
 a.active {
   color: #fec52c !important;
-  transition: 0.6s;
+  
 }
+
+
 
 @media screen and (max-width: 830px) {
   .container {
@@ -184,7 +184,7 @@ a.active {
     padding: 25px;
   }
   .site-navbar ul li a:hover {
-    background-color: rgba(0, 0, 0, 0.295);
+    background-color: rgba(0, 0, 0, 0.548);
   }
   .site-navbar ul.open {
     max-height: 100vh;

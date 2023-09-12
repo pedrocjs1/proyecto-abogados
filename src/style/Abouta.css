@@ -190,18 +190,3 @@ section h3.section-subheadinga {
 
 
 
-.image-me {
-    position: relative;
-    width: 100%;
-    max-width: 25rem !important;
-    height: 100%;
-    min-height: 15rem;
-    padding: 0;
-    background-image: url("../images/PEDROVEGA.jpg");
-    background-position: center center;
-    background-repeat: none;
-    background-size: cover;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    border-radius: 300px 300px 300px 300px;
-  
-}

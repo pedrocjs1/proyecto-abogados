@@ -1,79 +1,63 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "jquery/dist/jquery.min.js";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "../style/Header.css";
-
+import { useSpring, animated } from "react-spring";
 
 function Header() {
-  const [loaded, setLoaded] = useState(false);
+  const isWideScreen = window.innerWidth >= 1200;
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoaded(true);
-    }, 500); 
-  }, []);
+  const h1Animation = useSpring({
+    clipPath: isWideScreen ? "inset(0% 0% 0% 0%)" : "inset(0% 0% 0% 0%)",
+    transform: isWideScreen ? "translateY(0)" : "translateY(0)",
+    delay: isWideScreen ? 500 : 0,
+    from: isWideScreen
+      ? { clipPath: "inset(0% 100% 0% 0%)", transform: "translateY(40px)" }
+      : { clipPath: "inset(0% 0% 0% 0%)", transform: "translateY(0)" },
+    config: { duration: isWideScreen ? 1000 : 0 },
+  });
+
+  const h2Animation = useSpring({
+    opacity: isWideScreen ? 1 : 1,
+    transform: isWideScreen ? "translateY(0)" : "translateY(0)",
+    delay: isWideScreen ? 2000 : 0,
+    from: isWideScreen
+      ? { opacity: 0, transform: "translateY(-40px)" }
+      : { opacity: 1, transform: "translateY(0)" },
+    config: { duration: isWideScreen ? 500 : 0 },
+  });
+
+  const buttonAnimation = useSpring({
+    opacity: isWideScreen ? 1 : 1,
+    transform: isWideScreen ? "translateY(0)" : "translateY(0)",
+    delay: isWideScreen ? 2000 : 0,
+    from: isWideScreen
+      ? { opacity: 0, transform: "translateY(40px)" }
+      : { opacity: 1, transform: "translateY(0)" },
+    config: { duration: isWideScreen ? 500 : 0 },
+  });
+  
 
   return (
-    <header id="inicio" className={loaded ? "ilawyer-page-loaded" : ""}>
-      <div className="container">
-        <div className="intro-text">
-          <div className="intro-lead-in">
-            {Array.from(
-              "El bufete de abogados donde nuestros clientes siempre son lo primero"
-            ).map((char, index) =>
-              char === " " ? (
-                <span key={index} className="ilawyer-space">
-                  &nbsp;
-                </span>
-              ) : (
-                <span key={index} className="ilawyer-char sloganH">
-                  {char}
-                </span>
-              )
-            )}
+    <header id="inicio">
+      <div className="intro-text d-flex w-100 h-100 flex-column justify-content-center align-items-center gap-3">
+        <animated.div style={h2Animation} className="intro-lead-ina">
+          <h2>The law firm where our Clients always come first</h2>
+        </animated.div>
+        <animated.div style={h1Animation} className="intro-headinga">
+          <div className="container-char">
+            <h1>Be protected</h1>
+            <h1>by the herd</h1>
           </div>
-          <div className="intro-heading">
-            <div className="container-char">
-              <div className="oneGroup">
-                {Array.from("Está protegido").map((char, index) =>
-                  char === " " ? (
-                    <span key={index} className="ilawyer-space">
-                      &nbsp;
-                    </span>
-                  ) : (
-                    <span key={index} className="ilawyer-char">
-                      {char}
-                    </span>
-                  )
-                )}
-              </div>
-              <div className="Twogroup">
-                {Array.from("por la manada").map((char, index) =>
-                  char === " " ? (
-                    <span key={index} className="ilawyer-space">
-                      &nbsp;
-                    </span>
-                  ) : (
-                    <span key={index} className="ilawyer-char">
-                      {char}
-                    </span>
-                  )
-                )}
-              </div>
-              
-            </div>
-            
-          </div>
-          <a
-            
-            className="page-scroll text-white btn btn-xl background"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Descargar Cv
-          </a>
-        </div>
+        </animated.div>
+        <animated.a
+          style={buttonAnimation}
+          className="btn-consult"
+          target="_blank"
+        >
+          click for free consultation
+        </animated.a>
       </div>
     </header>
   );
