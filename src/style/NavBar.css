@@ -202,6 +202,15 @@ a.active {
     background-color: transparent !important;
     border-bottom: none;
   }
+  .a-white-rule {
+    color: #ffffff !important;
+  }
+  .span-white-rule {
+    color: #fec52c !important;
+  }
+  .links-white-rule {
+    color:#ffffff !important;
+  }
   a {
     color: #dac50b !important;
     font-weight: bolder;
@@ -209,7 +218,27 @@ a.active {
   .site-logo img {
     width: 14rem !important;
   }
+  .a-white-rule-xxx {
+    color: #000000 !important;
+  }
+  .span-white-rule-xxx {
+    color: #3aa89e !important;
+  }
+  .links-white-rule-xxx {
+    color:#000000 !important;
+  }
+  .container-nav-container-ul-number {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: end !important;
+    justify-content: end !important;
+  }
+  .free-span {
+    margin-bottom: 0.4rem;
+  }
+  
 }
+
 
 @media (min-width: 300px) {
   a {
