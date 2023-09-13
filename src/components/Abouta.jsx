@@ -44,7 +44,7 @@ export default function Abouta() {
     <section id="abouta">
       <div className="containerab">
         <div className="row">
-          <div className="col-lg-12 text-center d-flex flex-column w-100 justify-content-center justify-content-center align-items-center">
+          <div className="col-lg-12 text-center jh2 d-flex flex-column w-100 justify-content-center justify-content-center align-items-center">
             <animated.div style={h2Animation}>
               <h2 className="section-headinga" ref={ref}>
                 YOUR PERSONAL INJURY & WORKERS COMP LAWYERS
@@ -104,8 +104,6 @@ export default function Abouta() {
                 insurance companies know it. In fact, we have recovered over
                 $250 million on behalf of our clients.
               </p>
-            </div>
-            <div className="w-100 gala">
               <h2 className="text-abouta">
                 We Can Allow You To Focus on What’s Important
               </h2>
