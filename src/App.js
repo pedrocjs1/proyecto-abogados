@@ -21,9 +21,7 @@ function App() {
       
     <div id="page-top" className="index App" data-pinterest-extension-installed="cr1.3.4">
       <Navbar />
-      <header className="App-header">
-        <Header />
-      </header>
+      <Header />  
       <Abouta />
       <Tecnologies />
       <Portfolio />

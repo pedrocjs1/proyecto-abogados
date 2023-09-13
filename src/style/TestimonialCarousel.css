@@ -1,0 +1,90 @@
+/* TestimonialCarousel.css */
+
+.carousel-container {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.carousel-slide {
+  position: relative;
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.carousel-slide::before {
+  content: ""; /* Necesario para que el pseudo-elemento se muestre */
+  position: absolute; /* Posicionamiento absoluto */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; /* Estas propiedades hacen que el pseudo-elemento cubra todo el elemento padre */
+  background: rgba(
+    0,
+    0,
+    0,
+    0.397
+  ); /* Fondo negro con un 50% de transparencia */
+  z-index: 1; /* Para asegurarse de que este efecto de oscurecimiento esté por encima de la imagen, pero por debajo de los contenidos (texto, estrellas, etc.) */
+}
+
+/* Asegúrate de que los contenidos del slide estén por encima del efecto de oscurecimiento */
+.star-image,
+.testimonial-text,
+h5 {
+  position: relative;
+  z-index: 2;
+}
+
+.carousel-slide p {
+  font-family: "Titillium Web", sans-serif;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+.carousel-slide h5 {
+  display: block;
+  margin-top: -5px;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+  line-height: 16px;
+  font-family: "Titillium Web", sans-serif;
+  color: #fec52c;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: normal;
+  text-decoration: none;
+}
+.star-image {
+  height: 150px;
+}
+
+.testimonial-text {
+  text-align: center;
+  width: 50%;
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 768px) {
+  .carousel-container {
+    max-width: 90%; /* O cualquier valor que desees para móviles */
+  }
+
+  .carousel-slide {
+    height: 300px; /* Ajusta según lo necesites */
+  }
+
+  .star-image {
+    height: 75px; /* Ajusta según lo necesites */
+  }
+
+  .testimonial-text {
+    width: 80%; /* O cualquier valor que desees para móviles */
+  }
+}

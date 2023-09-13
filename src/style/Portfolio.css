@@ -1,175 +1,94 @@
 .img-grand img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  width: 100%;
 }
 
 .move-up {
-    margin-top: -5rem;
+  margin-top: -5rem;
 }
 
 #about {
-    background: linear-gradient(0deg, #0a554e 0%, #021110 100%) 0% 0% no-repeat padding-box;
-}
-
-.container-about {
-    width: 100%;
-    max-width: 40rem;
-    
-    padding: 0rem 2rem 0rem 2rem;
-}
-.container-about h2{
-    font-size: 16px ;
-    line-height: 28px;
-    font-family: "Open Sans", sans-serif;
-    font-weight: bold;
-    font-style: normal;
-    
+  background: linear-gradient(0deg, #0a554e 0%, #021110 100%) 0% 0% no-repeat
+    padding-box;
 }
 
 .line-p {
-    background: #11978b;
-    margin-top: 38px;
-    margin-bottom: 19px;
-    width: 100%;
-    height: 3px;
-    content: "";
-    display: block;
-}
-
-
-.container-about p{
-    font-size: 14px ;
-    line-height: 28px;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    
+  background: #11978b;
+  margin-top: 38px;
+  margin-bottom: 19px;
+  width: 100%;
+  height: 3px;
+  content: "";
+  display: block;
 }
 
 .text-about {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  width: 100%;
 }
-
-
 section {
-    padding: 40px 40px;
-}
-  
-section h2.section-heading {
-    margin-top: 0;
-    margin-bottom: 15px;
-    font-size: 40px;
-    font-family: "Titillium Web", sans-serif;
-    font-weight: 700;
-}
-  
-.section-heading {
-    padding: 0rem 6rem 0rem 6rem;
+  padding: 40px 40px;
 }
 
-section h3.section-subheading {
-    margin-bottom: 75px;
-    text-transform: none;
-    font-size: 16px;
-    font-style: italic;
-    font-weight: 400;
+.text-about {
+  max-width: 35rem;
+  font-size: 38px;
+  letter-spacing: 7px;
+  line-height: 41px;
+  font-family: "Titillium Web", sans-serif;
+  color: #fec52c;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  font-style: normal;
+}
+.parraf-text {
+  font-size: 16px;
+  line-height: 28px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: #ffff;
 }
 
-.container-subheading {
-    max-width: 34rem;
-    width: 100%;
+.section-text {
+  margin-top: 1rem;
+}
+.margintop {
+  margin-top: 6rem;
 }
 
-.container-subheading h3{
-    color: #11978b;
-    font-family: "Open Sans", sans-serif !important;
-    font-weight: bold !important;
+@media screen and (min-width: 642px) {
+  .section-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .img-grand img {
+    width: 30rem;
+  }
 }
-
-.container-about h2, p {
-    width: 100%;
-}
-
-.container-about h2 {
-    max-width: 35rem;
-    font-size: 38px;
-    letter-spacing: 7px;
-    line-height: 41px;
-    font-family: "Titillium Web", sans-serif;
-    color: #fec52c;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-    font-style: normal;
-}
-.container-about p {
-    font-size: 16px;
-    line-height: 28px;
-    font-family: "Open Sans", sans-serif;
-    font-weight: bold;
-    font-style: normal;
-    color: #ffff;
-}
-
-
-
-
-.section-subheading {
-    box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total */
-    /* max-width: 80%;  */
-    /* margin: auto;  */
-    /* text-align: center;  */
-    padding: 1rem;
-}
-
-
-@media screen and (min-width: 1078px) {
-    .container-about  {
-        width: 100%;
-        display: flex;
-        min-width: 100%;
-        padding: 1rem 12rem;
-
-        
-    }
-    .gal {
-        min-width: 100% !important;
-    }
-}
-
-
 
 @media screen and (min-width: 812px) {
-    .img-grand img {
-        width: 30rem;
-    }
+  .img-grand img {
+    width: 30rem;
+  }
 }
 @media screen and (max-width: 330px) {
-    .container-about h2{
-        font-size: 1.1rem;
-    }
-    .container-about p{
-        font-size: .8rem;
-    }
 }
 
-
-
-/* @media screen and (min-width: 1200px) {
-    .container {
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-        
-    }
-    .container-image{
-        width: 30rem;
-    }
-    .container-text{
-        max-width: 30rem;
-    }
-} */
+@media screen and (min-width: 1200px) {
+  .container-port {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+  }
+  .section-text {
+    max-width: 30rem;
+  }
+}

@@ -1,27 +1,65 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "jquery/dist/jquery.min.js";
 import "bootstrap/dist/js/bootstrap.min.js";
-import "../style/Abouta.css"
-
+import "../style/Abouta.css";
+import { useSpring, animated } from "react-spring";
+import { useInView } from "react-intersection-observer";
 
 export default function Abouta() {
+  const [ref, inView] = useInView({
+    threshold: 0.1,
+    triggerOnce: true,
+  });
+
+  const isWideScreen = window.innerWidth >= 1200;
+
+  const h2Animation = useSpring({
+    clipPath: isWideScreen
+      ? inView
+        ? "inset(0% 0% 0% 0%)"
+        : "inset(0% 100% 0% 0%)"
+      : "inset(0% 0% 0% 0%)",
+    transform: isWideScreen
+      ? inView
+        ? "translateY(0)"
+        : "translateY(40px)"
+      : "translateY(0)",
+    delay: isWideScreen && inView ? 500 : 0,
+    config: { duration: isWideScreen ? 1000 : 0 },
+  });
+
+  const h3Animation = useSpring({
+    opacity: isWideScreen ? (inView ? 1 : 0) : 1,
+    transform: isWideScreen
+      ? inView
+        ? "translateY(0)"
+        : "translateY(-40px)"
+      : "translateY(0)",
+    delay: isWideScreen && inView ? 2000 : 0,
+    config: { duration: isWideScreen ? 500 : 0 },
+  });
+
   return (
     <section id="abouta">
       <div className="containerab">
         <div className="row">
           <div className="col-lg-12 text-center d-flex flex-column w-100 justify-content-center justify-content-center align-items-center">
-            <h2 className="section-headinga">
-              YOUR PERSONAL INJURY & WORKERS COMP LAWYERS
-            </h2>
+            <animated.div style={h2Animation}>
+              <h2 className="section-headinga" ref={ref}>
+                YOUR PERSONAL INJURY & WORKERS COMP LAWYERS
+              </h2>
+            </animated.div>
             <div className="container-subheadinga">
-              <h3 className="section-subheadinga ">
-                IF YOU NEED HELP – YOU NEED BIGHORN LAW. OUR ATTORNEYS HAVE
-                RECOVERED OVER $250 MILLION FOR OUR CLIENTS. WE’VE FOUGHT FOR
-                CLIENTS WHO WERE INJURED IN A WIDE RANGE OF SITUATIONS –
-                PERSONAL INJURY, WORKERS’ COMPENSATION, MEDICAL MALPRACTICE, AND
-                MUCH MORE. BIGHORN LAW HAS YOUR BACK IN ANY SCENARIO.
-              </h3>
+              <animated.div style={h3Animation}>
+                <h3 className="section-subheadinga">
+                  IF YOU NEED HELP – YOU NEED BIGHORN LAW. OUR ATTORNEYS HAVE
+                  RECOVERED OVER $250 MILLION FOR OUR CLIENTS. WE’VE FOUGHT FOR
+                  CLIENTS WHO WERE INJURED IN A WIDE RANGE OF SITUATIONS –
+                  PERSONAL INJURY, WORKERS’ COMPENSATION, MEDICAL MALPRACTICE,
+                  AND MUCH MORE. BIGHORN LAW HAS YOUR BACK IN ANY SCENARIO.
+                </h3>
+              </animated.div>
             </div>
           </div>
         </div>
