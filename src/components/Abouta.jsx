@@ -36,7 +36,7 @@ export default function Abouta() {
         ? "translateY(0)"
         : "translateY(-40px)"
       : "translateY(0)",
-    delay: isWideScreen && inView ? 2000 : 0,
+    delay: isWideScreen && inView ? 1000 : 0,
     config: { duration: isWideScreen ? 500 : 0 },
   });
 

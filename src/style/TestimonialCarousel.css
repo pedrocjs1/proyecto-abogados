@@ -1,14 +1,12 @@
-/* TestimonialCarousel.css */
-
 .carousel-container {
-  max-width: 50rem;
+  max-width: 100%;
   margin: 0 auto;
 }
 
 .carousel-slide {
   position: relative;
   background-size: cover;
-  height: 600px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,22 +15,16 @@
 }
 
 .carousel-slide::before {
-  content: ""; /* Necesario para que el pseudo-elemento se muestre */
-  position: absolute; /* Posicionamiento absoluto */
+  content: "";
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0; /* Estas propiedades hacen que el pseudo-elemento cubra todo el elemento padre */
-  background: rgba(
-    0,
-    0,
-    0,
-    0.397
-  ); /* Fondo negro con un 50% de transparencia */
-  z-index: 1; /* Para asegurarse de que este efecto de oscurecimiento esté por encima de la imagen, pero por debajo de los contenidos (texto, estrellas, etc.) */
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.253);
+  z-index: 1;
 }
 
-/* Asegúrate de que los contenidos del slide estén por encima del efecto de oscurecimiento */
 .star-image,
 .testimonial-text,
 h5 {
@@ -70,21 +62,156 @@ h5 {
   width: 50%;
 }
 
-/* Estilos específicos para dispositivos móviles */
-@media (max-width: 768px) {
+#about .swiper-pagination-bullet {
+  background: #ffffff !important;
+}
+
+@media (min-width: 200px) {
   .carousel-container {
-    max-width: 90%; /* O cualquier valor que desees para móviles */
+    max-width: 100%;
+    max-height: 100%;
   }
 
   .carousel-slide {
-    height: 300px; /* Ajusta según lo necesites */
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .star-image {
-    height: 75px; /* Ajusta según lo necesites */
+    height: 60px;
   }
 
   .testimonial-text {
-    width: 80%; /* O cualquier valor que desees para móviles */
+    width: 80%;
+    font-size: 0.6rem !important;
+    margin-top: -1rem;
+  }
+  .carousel-slide h5 {
+    font-size: 0.6rem;
+  }
+}
+
+@media (min-width: 350px) {
+  .carousel-container {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .carousel-slide {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .star-image {
+    height: 80px;
+  }
+
+  .testimonial-text {
+    width: 80%;
+    font-size: 1.1rem !important;
+    margin-bottom: 0rem;
+  }
+}
+
+@media (min-width: 677px) {
+  .carousel-container {
+    max-width: 100%;
+  }
+
+  .carousel-slide {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .star-image {
+    height: 100px;
+  }
+
+  .testimonial-text {
+    width: 80%;
+    font-size: 1.5rem !important;
+    margin-bottom: 0rem;
+  }
+  .carousel-slide h5 {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 856px) {
+  .carousel-container {
+    max-width: 90%;
+  }
+
+  .carousel-slide {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+  }
+
+  .star-image {
+    height: 150px;
+  }
+
+  .testimonial-text {
+    width: 80%;
+    font-size: 1.7rem !important;
+    margin-top: -1rem;
+  }
+  .carousel-slide h5 {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1178px) {
+  .carousel-container {
+    max-width: 70%;
+  }
+
+  .carousel-slide {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+  }
+
+  .testimonial-text {
+    width: 80%;
+    font-size: 1.9rem !important;
+    margin-top: -1rem;
+  }
+  .carousel-slide h5 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1589px) {
+  .carousel-container {
+    max-width: 60%;
+  }
+
+  .carousel-slide {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+  }
+
+  .testimonial-text {
+    width: 80%;
+    font-size: 2.1rem !important;
+    margin-top: -1rem;
+  }
+  .carousel-slide h5 {
+    font-size: 1.5rem;
   }
 }

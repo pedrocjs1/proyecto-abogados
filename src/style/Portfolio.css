@@ -5,10 +5,6 @@
   width: 100%;
 }
 
-.move-up {
-  margin-top: -5rem;
-}
-
 #about {
   background: linear-gradient(0deg, #0a554e 0%, #021110 100%) 0% 0% no-repeat
     padding-box;
@@ -79,8 +75,6 @@ section {
     width: 30rem;
   }
 }
-@media screen and (max-width: 330px) {
-}
 
 @media screen and (min-width: 1200px) {
   .container-port {
@@ -90,5 +84,16 @@ section {
   }
   .section-text {
     max-width: 30rem;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .container-port {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 4rem;
+  }
+  .img-grand img {
+    width: 50rem;
   }
 }

@@ -1,0 +1,181 @@
+#contact {
+  background-color: #ffffff !important;
+}
+
+#contact {
+  position: relative;
+  width: 100%;
+
+  height: 100%;
+  min-height: 14rem;
+  padding: 0;
+  background-position: top center;
+  background-repeat: none;
+  background-size: cover;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 5px;
+}
+
+.container-contact {
+  background: linear-gradient(0deg, #0a554e 0%, #021110 100%) 0% 0% no-repeat
+    padding-box;
+  padding: 1.2rem;
+  margin: 0rem;
+}
+
+.btn-send {
+  cursor: pointer;
+  border: none;
+
+  background: linear-gradient(180deg, #ffe08e 0%, #fec52c 100%) 0% 0% no-repeat
+    padding-box;
+  padding: 16px 26px;
+  border-radius: 100px;
+
+  z-index: 1;
+  overflow: hidden;
+  transition: color 200ms ease-in-out;
+  font-size: 18px;
+  line-height: 18px;
+  font-family: "Titillium Web", sans-serif;
+  color: #1a1a1a;
+  font-weight: 700;
+  text-align: center;
+  text-transform: lowercase;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.btn-send::after,
+button[type="submit"]::after {
+  background: #11978b;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 200ms ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  display: block;
+}
+
+.btn-send:hover {
+  opacity: 1;
+}
+
+section#contact .section-heading {
+  color: #fff;
+}
+
+section#contact .form-group {
+  margin-bottom: 25px;
+}
+
+section#contact .form-group input,
+section#contact .form-group textarea {
+  padding: 20px;
+}
+
+section#contact .form-group input.form-control {
+  height: auto;
+}
+
+section#contact .form-group textarea.form-control {
+  height: 200px;
+  resize: none;
+}
+
+section#contact .form-control:focus {
+  border-color: #fece4c;
+  box-shadow: none;
+}
+
+section#contact::-webkit-input-placeholder {
+  text-transform: uppercase;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #bbb;
+}
+
+section#contact:-moz-placeholder {
+  text-transform: uppercase;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #bbb;
+}
+
+section#contact::-moz-placeholder {
+  text-transform: uppercase;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #bbb;
+}
+
+section#contact:-ms-input-placeholder {
+  text-transform: uppercase;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #bbb;
+}
+
+section#contact .text-danger {
+  color: #e74c3c;
+}
+.section-heading-contant {
+  font-size: 30px;
+  font-family: "Titillium Web", sans-serif;
+  color: #11978b;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.contact-subtitle {
+  font-size: 15px;
+  line-height: 20px;
+  font-family: "Titillium Web", sans-serif;
+  color: #fec52c;
+  font-weight: 600;
+  text-align: center;
+  font-style: normal;
+}
+
+@media screen and (min-width: 641px) {
+  .input-group-personal {
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+    gap: 1rem;
+  }
+  .group-form-one {
+    flex: 1;
+    /* margin-right: 15px; */
+  }
+  .group-form-two {
+    flex: 1;
+  }
+  .container-contact {
+    padding: 2.5rem;
+    margin: 1rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .container-contact {
+    padding: 5rem;
+    margin: 3rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-contact {
+    padding: 8rem;
+    margin: 6rem;
+  }
+}

@@ -1,43 +1,43 @@
 header {
-    height: 100vh;
-    text-align: center;
-    color: #fff;
-    background-attachment: scroll;
-    background-image: url("../images/fondo-header-def.jpg");
-    background-position: center center;
-    background-repeat: none;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+  height: 100vh;
+  text-align: center;
+  color: #fff;
+  background-attachment: scroll;
+  background-image: url("../images/fondo-header-def.jpg");
+  background-position: center center;
+  background-repeat: none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
-  
-.intro-lead-ina h2 {
-    font-size: 20px;
-    line-height: 20px;
-    color: #fec52c;
-    font-weight: 700;
-    text-transform: capitalize;
-    font-style: normal;
 
+.intro-lead-ina h2 {
+  font-size: 20px;
+  line-height: 20px;
+  color: #fec52c;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-style: normal;
 }
 
 .container-char h1 {
-    font-family: "Titillium Web", sans-serif;
-    color: #fff;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-style: normal;
+  font-family: "Titillium Web", sans-serif;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: normal;
 }
 
 .btn-consult {
-    cursor: pointer;
+  cursor: pointer;
   border: none;
   display: block;
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
-  background: linear-gradient(180deg, #ffe08e 0%, #fec52c 100%) 0% 0% no-repeat padding-box;
+  background: linear-gradient(180deg, #ffe08e 0%, #fec52c 100%) 0% 0% no-repeat
+    padding-box;
   padding: 16px 26px;
   border-radius: 100px;
   position: relative;
@@ -47,7 +47,7 @@ header {
   font-size: 18px;
   line-height: 18px;
   font-family: "Titillium Web", sans-serif;
-  color: #1a1a1a;
+  color: #1a1a1a !important;
   font-weight: 700;
   text-align: center;
   text-transform: lowercase;
@@ -59,13 +59,34 @@ header {
   color: #ffffff !important;
 }
 
+@media (min-width: 200px) {
+  header {
+    height: calc(100vh + 8rem) !important;
+  }
+}
 
+@media (min-width: 570px) {
+  .container-char h1 {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 764px) {
+  .container-char h1 {
+    font-size: 4.5rem;
+  }
+}
+
+@media (min-width: 1020px) {
+  .container-char h1 {
+    font-size: 5rem;
+  }
+}
 
 @media (min-width: 1200px) {
-    header {
-        height: 100vh;
-    }
-    .container-char h1 {
-        font-size: 5rem;
-    }
+  header {
+    height: 100vh;
+  }
+  .container-char h1 {
+    font-size: 5rem;
+  }
 }
