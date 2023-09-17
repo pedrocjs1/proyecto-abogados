@@ -63,14 +63,14 @@ export default function Practice() {
             <animated.div style={h3Animation}>
               <h2 className="h2-text-practice">
                 If you or a loved one have been seriously injured in a
-                preventable accident or on the job, the attorneys at Bighorn Law
-                can help.
+                preventable accident or on the job, the attorneys at Keithston
+                Law can help.
               </h2>
               <p className="parraf-text-practice">
                 A serious injury can dramatically affect your life, leaving you
                 unable to work, saddled with significant medical expenses, and
                 facing the prospect of temporary or permanent disability. You
-                need an experienced advocate on your side. At Bighorn Law, we
+                need an experienced advocate on your side. At Keithston Law, we
                 have dedicated our practice to helping those who have been
                 injured in Las Vegas and throughout Nevada get their lives back
                 on track. We can help you fight for the compensation you are
@@ -81,7 +81,7 @@ export default function Practice() {
                 for our service. Our team will handle every aspect of your case,
                 while you focus on what matters – your health and your family.
                 If you have suffered a serious injury in Nevada, please, contact
-                an attorney at Bighorn Law as soon as you are able. We offer a
+                an attorney at Keithston Law as soon as you are able. We offer a
                 free and confidential case evaluation and are ready to listen to
                 your story and help ease your burden.
               </p>

@@ -53,11 +53,11 @@ export default function Abouta() {
             <div className="container-subheadinga">
               <animated.div style={h3Animation}>
                 <h3 className="section-subheadinga">
-                  IF YOU NEED HELP – YOU NEED BIGHORN LAW. OUR ATTORNEYS HAVE
+                  IF YOU NEED HELP – YOU NEED Keithston LAW. OUR ATTORNEYS HAVE
                   RECOVERED OVER $250 MILLION FOR OUR CLIENTS. WE’VE FOUGHT FOR
                   CLIENTS WHO WERE INJURED IN A WIDE RANGE OF SITUATIONS –
                   PERSONAL INJURY, WORKERS’ COMPENSATION, MEDICAL MALPRACTICE,
-                  AND MUCH MORE. BIGHORN LAW HAS YOUR BACK IN ANY SCENARIO.
+                  AND MUCH MORE. Keithston LAW HAS YOUR BACK IN ANY SCENARIO.
                 </h3>
               </animated.div>
             </div>
@@ -67,7 +67,7 @@ export default function Abouta() {
           <div className="d-flex  justify-content-center flex-wrap gap-3 container-abouta text-start ">
             <div className="w-100 gala ">
               <h2 className="text-abouta">
-                Bighorn Law is one of Nevada’s premier injury law firms. Our
+                Keithston Law is one of Nevada’s premier injury law firms. Our
                 attorneys are among the nation’s best at fighting for the rights
                 of the seriously injured.
               </h2>
@@ -91,7 +91,7 @@ export default function Abouta() {
                 Without proper legal representation, injury victims rarely find
                 justice for what has happened to them. In fact, insurance
                 companies are set up to pay as little as possible – or nothing
-                at all – to claimants. This is where Bighorn Law comes in.
+                at all – to claimants. This is where Keithston Law comes in.
               </p>
               <p>
                 We’ve been through the process countless times and understand
@@ -111,7 +111,7 @@ export default function Abouta() {
                 Part of our winning strategy is simply caring more about our
                 clients and treating them with the respect they deserve.
                 However, for us, it goes much further than that. If you choose
-                Bighorn Law to handle your case, you get access to a team of
+                Keithston Law to handle your case, you get access to a team of
                 talented attorneys and our significant resources. This includes
                 our comprehensive network of the best doctors, surgeons, and
                 conservative treatment specialists available.
@@ -123,8 +123,8 @@ export default function Abouta() {
                 companies and other people who will take advantage of you.
               </p>
               <h2>
-                If you have been injured, call Bighorn Law today for a free and
-                confidential case evaluation.
+                If you have been injured, call Keithston Law today for a free
+                and confidential case evaluation.
               </h2>
             </div>
           </div>

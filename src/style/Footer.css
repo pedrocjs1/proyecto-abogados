@@ -38,7 +38,7 @@ footer::before {
 
 footer .title-footer {
   display: block;
-  max-width: 255px;
+  max-width: 400px;
   margin-left: auto;
   margin-right: auto;
   font-size: 40px;
@@ -187,6 +187,53 @@ footer .title-footer {
   }
   .social-buttons {
     justify-content: flex-start !important;
+  }
+}
+
+#copyright {
+  margin-top: 57px;
+  border-top: 1px solid rgb(255, 255, 255);
+  width: 100%;
+  display: flex;
+}
+#copyright-inner ul li {
+  display: inline;
+  font-size: 14px !important;
+  letter-spacing: 1.5px;
+  line-height: 10px;
+  font-family: "Titillium Web", sans-serif;
+  color: #ffffff !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: normal;
+  text-decoration: none;
+}
+
+#copyright-inner ul li a::before {
+  margin-left: 2px;
+  margin-right: 6px;
+  background: #fff;
+  width: 2px;
+  height: 7px;
+  content: "";
+  display: inline-block;
+}
+
+#copyright-inner ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 200ms ease-in-out;
+}
+#copyright-inner ul {
+  display: flex;
+  gap: 2rem !important;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  #copyright-inner ul li {
+    font-size: 12px;
+    letter-spacing: 1.72px;
   }
 }
 

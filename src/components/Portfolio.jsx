@@ -57,7 +57,7 @@ export default function Portfolio() {
         </div>
         <div className="d-flex w-100 gap-3 text-start justify-content-around section-text text-white flex-column">
           <animated.div style={h2Animation}>
-            <h2 className="text-about ">Get to know BigHorn Law</h2>
+            <h2 className="text-about ">Get to know Keithston Law</h2>
           </animated.div>
           <div className="line-p"></div>
 
@@ -65,7 +65,7 @@ export default function Portfolio() {
             <p className="parraf-text">
               An attorney can make or break a case based on how the case is
               documented, developed, and positioned for insurance companies and
-              juries. At Bighorn Law, we make sure that nothing is missed in
+              juries. At Keithston Law, we make sure that nothing is missed in
               your case and our results prove it. With more than a dozen
               attorneys and decades of experience, our knowledge translates to
               more cases won, higher settlements, and happier clients. We
@@ -73,7 +73,7 @@ export default function Portfolio() {
               our firm’s collective knowledge, experience, and successes.
             </p>
             <p className="parraf-text">
-              It’s no surprise Bighorn Law was named in the Top 100 personal
+              It’s no surprise Keithston Law was named in the Top 100 personal
               injury attorneys in the nation in 2020. If you need an attorney,
               let us put our experience and resources to work for you.
             </p>

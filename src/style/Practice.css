@@ -92,6 +92,10 @@ section {
   text-decoration: none;
 }
 
+#practice a {
+  color: #000000be !important;
+}
+
 #section-nine-pa-list li a {
   text-decoration: none;
   color: #1a1a1a;

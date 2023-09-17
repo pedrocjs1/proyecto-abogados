@@ -12,7 +12,9 @@ export default function Footer() {
       <div className="container-footer">
         <div className="row d-flex justify-content-center flex-column w-100 footer-global">
           <div className="title-footer">
-            <span className="ilawyer-text-gradient">Bighorn Has Your Back</span>
+            <span className="ilawyer-text-gradient">
+              Keithston Has Your Back
+            </span>
           </div>
           <div className="footer-group-container">
             <div className="footer-col">
@@ -69,6 +71,24 @@ export default function Footer() {
               </a>
             </ul>
           </div>
+        </div>
+      </div>
+      <div id="copyright">
+        <div id="copyright-inner">
+          <ul>
+            <li>COPYRIGHT © 2023 - KEITHSTON LAW</li>
+            <li>
+              <a href="https://bighornlaw.com/privacy-policy/">
+                Privacy Policy
+              </a>
+            </li>
+          </ul>
+          <a
+            id="ilawyer-logo"
+            href="//ilawyermarketing.com"
+            target="_blank"
+            rel="noopener"
+          ></a>
         </div>
       </div>
     </footer>

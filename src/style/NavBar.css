@@ -35,7 +35,6 @@
   text-transform: uppercase;
 }
 
-
 /* nav-toggler css start */
 .nav-toggler {
   border: none;
@@ -44,7 +43,7 @@
   cursor: pointer;
   height: 39px;
   display: none;
-  margin-right: .7rem;
+  margin-right: 0.7rem;
 }
 .nav-toggler span,
 .nav-toggler span:before,
@@ -121,7 +120,6 @@ a.site-logo img {
   text-decoration: none;
 }
 
-
 .free-span {
   display: block;
   margin-bottom: 0px;
@@ -146,10 +144,7 @@ a:focus,
 a:active,
 a.active {
   color: #fec52c !important;
-  
 }
-
-
 
 @media screen and (max-width: 830px) {
   .container {
@@ -209,7 +204,7 @@ a.active {
     color: #fec52c !important;
   }
   .links-white-rule {
-    color:#ffffff !important;
+    color: #ffffff !important;
   }
   a {
     color: #dac50b !important;
@@ -225,7 +220,7 @@ a.active {
     color: #3aa89e !important;
   }
   .links-white-rule-xxx {
-    color:#000000 !important;
+    color: #000000 !important;
   }
   .container-nav-container-ul-number {
     display: flex !important;
@@ -236,9 +231,7 @@ a.active {
   .free-span {
     margin-bottom: 0.4rem;
   }
-  
 }
-
 
 @media (min-width: 300px) {
   a {
@@ -249,7 +242,6 @@ a.active {
     width: 7rem !important;
   }
 }
-
 
 @media (max-width: 300px) {
   a {
@@ -281,7 +273,7 @@ a.active {
     max-width: 10rem !important;
   }
   .site-navbar {
-    display: flex ;
+    display: flex;
     flex-direction: column;
   }
   .nav-container-ul-number {
@@ -290,21 +282,16 @@ a.active {
   .container-nav-container-ul-number {
     display: flex;
     align-items: start !important;
-    margin-left: .5rem;
+    margin-left: 0.5rem;
   }
   .site-navbar ul {
     top: 7.17rem;
-    
   }
-  
 }
-
-
 
 @media (max-width: 484px) {
   .site-navbar ul {
     top: 7.99rem;
-    
   }
 }
 
@@ -314,7 +301,7 @@ a.active {
   }
 }
 @media (min-width: 831px) {
-  a {
+  nav a {
     color: #000000 !important;
   }
 }
@@ -323,4 +310,3 @@ a.active {
   background-color: rgb(255, 255, 255) !important;
   transition: background-color 0.5s ease; /* Esto añade una transición suave al cambiar el color de fondo */
 }
-

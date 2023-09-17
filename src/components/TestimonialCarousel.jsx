@@ -13,7 +13,7 @@ const TestimonialCarousel = () => {
   const testimonials = [
     {
       testimonio:
-        "I was absolutely impressed with responsiveness and professionalism  that I got from every employee during my case with Bighorn Law.",
+        "I was absolutely impressed with responsiveness and professionalism  that I got from every employee during my case with Keithston Law.",
       nombre: "Justin P",
     },
     {
@@ -23,7 +23,7 @@ const TestimonialCarousel = () => {
     },
     {
       testimonio:
-        "Bighorn Law delivered a grand slam, if you want to win big, then use this law firm and follow the advice they give you.",
+        "Keithston Law delivered a grand slam, if you want to win big, then use this law firm and follow the advice they give you.",
       nombre: "Santiago R",
     },
   ];
