@@ -27,33 +27,33 @@ export default function Footer() {
                 North Las Vegas, NV 89032
               </address>
               <a
-                class="get-directions"
+                className="get-directions"
                 href="https://goo.gl/maps/Rgtz8MxyEn8ukPkSA"
                 target="_blank"
                 rel="noopener"
               >
                 Get Directions{" "}
               </a>
-              <a class="footer-phone" href="tel:+17023331111">
+              <a className="footer-phone" href="tel:+17023331111">
                 <span>P</span> 702-333-1111
               </a>
             </div>
-            <div class="footer-col">
-              <span class="footer-subtitle">UTAH OFFICE</span>
-              <address class="footer-address">
+            <div className="footer-col">
+              <span className="footer-subtitle">UTAH OFFICE</span>
+              <address className="footer-address">
                 2230 N University Parkway
                 <br /> Suite 2C
                 <br /> Provo, UT 84604
               </address>
               <a
-                class="get-directions"
+                className="get-directions"
                 href="https://goo.gl/maps/3pcty3jP2tF7xedt9"
                 target="_blank"
                 rel="noopener"
               >
                 Get Directions{" "}
               </a>
-              <a class="footer-phone" href="tel:+17023331111">
+              <a className="footer-phone" href="tel:+17023331111">
                 <span>P</span> 702-333-1111
               </a>
             </div>
