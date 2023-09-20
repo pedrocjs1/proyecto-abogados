@@ -39,10 +39,12 @@ export default function Contact() {
       return;
     }
 
-    send("service_g3yun4c", "template_gnri6s6", {
+    send("service_c37lbu8", "template_q0o8sz5", {
       from_name: email,
       to_name: name,
       message: msg,
+      phone_number: phone,
+      email_user: email,
     });
     setName("");
     setLastName("");
@@ -96,7 +98,7 @@ export default function Contact() {
                         id="lastname"
                         required
                         data-validation-required-message="Please enter your name."
-                        onChange={(event) => setName(event.target.value)}
+                        onChange={(event) => setLastName(event.target.value)}
                       />
                       <p className="help-block text-danger" />
                     </div>

@@ -37,7 +37,6 @@ function Header() {
       : { opacity: 1, transform: "translateY(0)" },
     config: { duration: isWideScreen ? 500 : 0 },
   });
-  
 
   return (
     <header id="inicio">
@@ -54,7 +53,7 @@ function Header() {
         <animated.a
           style={buttonAnimation}
           className="btn-consult"
-          target="_blank"
+          href="#contact"
         >
           click for free consultation
         </animated.a>

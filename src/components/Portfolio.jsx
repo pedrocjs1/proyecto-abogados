@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "jquery/dist/jquery.min.js";
 import "bootstrap/dist/js/bootstrap.min.js";
@@ -39,7 +39,7 @@ export default function Portfolio() {
         ? "translateY(0)"
         : "translateY(-40px)"
       : "translateY(0)",
-    delay: isWideScreen && inView ? 2000 : 0,
+    delay: isWideScreen && inView ? 1000 : 0,
     config: { duration: isWideScreen ? 300 : 0 },
   });
 
