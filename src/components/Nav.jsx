@@ -21,8 +21,13 @@ function Navbar() {
     config: { duration: isWideScreenAnimated ? 500 : 0 },
   });
 
+  const initialIsScrolled = () => {
+    const savedState = localStorage.getItem("isScrolled");
+    return savedState ? JSON.parse(savedState) : window.scrollY > 30;
+  };
+
   const [menuOpen, setMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(initialIsScrolled);
   const [isWideScreen, setIsWideScreen] = useState(window.innerWidth > 1200);
   const [currentLogo, setCurrentLogo] = useState(
     isWideScreen ? LogoWhite : Logo
@@ -59,6 +64,8 @@ function Navbar() {
       }
       updateLogo();
     };
+
+    localStorage.setItem("isScrolled", JSON.stringify(isScrolled));
 
     window.addEventListener("resize", handleResize);
     window.addEventListener("scroll", handleScroll);
